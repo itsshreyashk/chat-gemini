@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  client:
+    image: itsshreyashk/gemini-client:v1
+    ports:
+      - "3000:3000"  # Corrected list syntax for ports
+
+  server:
+    image: itsshreyashk/gemini-server:v1
+    ports:
+      - "8080:8080"  # Correct syntax for ports
